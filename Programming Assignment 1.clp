@@ -11,11 +11,12 @@
 )
 	
 (defrule indirect-paths
-	(path (nodes $?begin ?temp)) 
+	(path (nodes $?begin ?temp) (cost ?cost1)) 
 	(path (nodes ?temp $?end) (cost ?cost2))
 	=>
 	; (bind ?total_cost 0) ; Initilize total_cost 
-	(bind ?total_cost (+ ?cost2 ?total_cost))
+	; (bind ?total_cost (+ ?cost2 ?total_cost))
+	(bind ?total_cost (+ ?cost1 ?cost2))
 	(assert (path (nodes $?begin ?temp $?end) (cost ?total_cost)))
 )
 	
