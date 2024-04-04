@@ -30,7 +30,7 @@
 	=>
 	
 	(printout t "E=" ?e ", O=" ?o ", W=" ?w ", H=" ?h ", N=" ?n crlf)
-	(printout t "  WE       "  ?w ?e crlf)
-	(printout t "+ HE      +"  ?h ?e crlf)
-	(printout t "-----  ------   ===>      " crlf)
-	(printout t "  NO     "  ?n ?o crlf crlf))
+	(printout t "    WE               "  ?w ?e crlf)
+	(printout t "  + HE             + "  ?h ?e crlf)
+	(printout t "  -----   ===>     ------         " crlf)
+	(printout t "    NO               "  ?n ?o crlf crlf))
